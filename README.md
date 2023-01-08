@@ -9,3 +9,6 @@
 - The use can add, remove and toggle a todo item.
 
 - The user can add or remove goals.
+
+## Demo
+![Demo](./demo.PNG)
