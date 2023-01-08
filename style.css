@@ -1,0 +1,27 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+h1,
+h2,
+legend {
+  text-align: center;
+}
+
+fieldset {
+  margin-top: 20px;
+}
+
+ul {
+  margin: 0;
+}
+
+#todos,
+#goals {
+  margin-top: 10px;
+}
