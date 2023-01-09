@@ -1,5 +1,17 @@
+// adding a checker function to use middleware
+const check = (store) => (next) => (action) => {
+  if (
+    action.type === ADD_TODO &&
+    action.todo.todo.toLowerCase().includes("lol")
+  ) {
+    alert("Enough playing lol!");
+  }
+  return next(action);
+};
+
 const store = Redux.createStore(
-  Redux.combineReducers({ todosReducer, goalsReducer })
+  Redux.combineReducers({ todosReducer, goalsReducer }),
+  Redux.applyMiddleware(check)
 );
 
 store.subscribe(() => {
